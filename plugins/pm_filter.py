@@ -299,7 +299,7 @@ async def advantage_spoll_choker(bot, query):
             await asyncio.sleep(10)
             await k.delete()
 
- @Client.on_callback_query(filters.regex(r"^languages#"))
+@Client.on_callback_query(filters.regex(r"^languages#"))
 async def languages_cb_handler(client: Client, query: CallbackQuery):
 
     if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
