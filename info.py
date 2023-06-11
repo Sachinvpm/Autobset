@@ -16,7 +16,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '14505719'))
 API_HASH = environ.get('API_HASH', '620f0a2aa2cd1474a4953619b3e3643d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5743107971:AAEjXgogAhvkYdVdSbVP96FUJUx2sc-1RpQ')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6283426639:AAEAGfBE54tuzHn_fojzXxVKVdLLSboJbwA')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -44,8 +44,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://karthickjk:karthick@cluster0.vcjskkq.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "rmovies")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'rxmov_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "rmoviess")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'rxmov_filess')
 
 # Others
 
