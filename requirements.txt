@@ -37,6 +37,6 @@ NumPy
 wheel
 ujson
 wget
-
+dnspython==2.3.0
 
 
