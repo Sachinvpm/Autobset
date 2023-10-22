@@ -16,7 +16,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '14505719'))
 API_HASH = environ.get('API_HASH', '620f0a2aa2cd1474a4953619b3e3643d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5946890162:AAHrqjIhyYE_t-05eq4q4dtOsd6_F6TDzFQ')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6107621055:AAEOU5fIIJP7G_IJVfJFnQItMuXbEddnSo4')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,7 +29,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5651594253').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001660257089').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001979888381').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -43,28 +43,28 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://karthickjk:karthick@cluster0.vcjskkq.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "rmoviess")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'rxmov_filess')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://escapematrix2h:sawan09h@cluster0.blsyi8a.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Raj")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b6aace46d40c605fff8e0cafbcd8fbe416851f4d')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'zxlink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '4205ff425fade7343f8fd9cc79dce620cac4b01f')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
 PORT = environ.get("PORT", "8080")
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+ZPpcbtCV204yYWU1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/RolexMoviesOXO')
-MOVIE_GRP = environ.get('MOVIE_GRP', 'https://t.me/+ZPpcbtCV204yYWU1')
-SERIES_GRP = environ.get('SERIES_GRP', 'https://t.me/RolexMoviesOXO')
-MAIN_CHNL = environ.get('MAIN_CHNL', 'https://telegram.me/TVSeriesCW')
-MSG_ALRT = environ.get('MSG_ALRT', '🚩 @RolexMoviesOXO Best Channel In Telegram')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+4nzja42ELQwzOWVl')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/i_Movieee')
+MOVIE_GRP = environ.get('MOVIE_GRP', 'https://t.me/+4nzja42ELQwzOWVl')
+SERIES_GRP = environ.get('SERIES_GRP', 'https://t.me/i_Movieee')
+MAIN_CHNL = environ.get('MAIN_CHNL', 'https://t.me/i_Movieee')
+MSG_ALRT = environ.get('MSG_ALRT', '🚩 Best Channel In Telegram')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001551869890'))
 REQUEST_LOGS = int(environ.get('REQUEST_LOGS', '-1001551869890'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'RolexMoviesOXO')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'bot_channel_011')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -77,7 +77,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", "4")
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', '-1001551869890'))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001921282208')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
@@ -96,8 +96,8 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 10800))
-DOWNLOAD_TEXT_URL = "https://t.me/tnlinkdown/6"
-CAPTION_BUTTON_URL = "https://t.me/RolexMoviesOXO"
+DOWNLOAD_TEXT_URL = "https://t.me/+dysmJ1DLQDFmNWY1"
+CAPTION_BUTTON_URL = "https://t.me/i_Movieee"
 WEBHOOK = bool(environ.get("WEBHOOK", True))
 BUTTON_LOCK = environ.get("BUTTON_LOCK", "True")
 RemoveBG_API = environ.get("RemoveBG_API", "eQ9W36MSu3pmQJLVPZHmF47F")
