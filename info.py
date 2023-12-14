@@ -36,7 +36,7 @@ auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', "@RolexMoviesOXO")
+support_chat_id = environ.get('SUPPORT_CHAT_ID', "")
 reqst_channel = environ.get('REQST_CHANNEL_ID', "")
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
@@ -96,13 +96,13 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 10800))
-DOWNLOAD_TEXT_URL = "https://t.me/+dysmJ1DLQDFmNWY1"
+DOWNLOAD_TEXT_URL = "https://t.me/+EYPCnAJ4uUtmY2Nl"
 CAPTION_BUTTON_URL = "https://t.me/i_Movieee"
 WEBHOOK = bool(environ.get("WEBHOOK", True))
 BUTTON_LOCK = environ.get("BUTTON_LOCK", "True")
 RemoveBG_API = environ.get("RemoveBG_API", "eQ9W36MSu3pmQJLVPZHmF47F")
-PM_IMDB = environ.get('PM_IMDB', "True")
+PM_IMDB = environ.get('PM_IMDB', "False")
 REQ_SUB = bool(environ.get("REQ_SUB", True))
-PMFILTER = environ.get('PMFILTER', "True")
+PMFILTER = environ.get('PMFILTER', "False")
 FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', LOG_CHANNEL))
 
